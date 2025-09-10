@@ -59,28 +59,29 @@ This document provides a comprehensive list of all dependencies, tools, librarie
 ### Rust Components
 
 #### Core Libraries
-- **rustc** (1.70.0+): Rust compiler with nightly features enabled
-- **cargo** (1.70.0+): Rust package manager
-- **rustup**: Rust toolchain installer
+- **rustc** (1.75.0+): Rust compiler with latest stabilized features
+- **cargo** (1.75.0+): Rust package manager with workspace support
+- **rustup**: Rust toolchain installer and version manager (latest)
 
-#### Cryptography
-- **[pqcrypto](https://github.com/rustpq/pqcrypto)** (0.16.0+): Post-quantum cryptography primitives
-- **[ring](https://github.com/briansmith/ring)** (0.17.0+): Cryptographic primitives (Advanced Encryption Standard, ChaCha20, Secure Hash Algorithm, Hash-based Message Authentication Code)
-- **[dalek-cryptography](https://github.com/dalek-cryptography)**: Ed25519/X25519 implementations
-- **[RustCrypto](https://github.com/RustCrypto)** suite: Modern cryptographic algorithms
-- **[openssl-rust](https://github.com/sfackler/rust-openssl)** (0.10.55+): OpenSSL bindings
-- **[rustls](https://github.com/rustls/rustls)** (0.21.0+): Transport Layer Security implementation in Rust
-- **[rust-hsm](https://github.com/Nitrokey/rust-hsm)** (0.5.0+): Hardware Security Module integration
+#### Cryptography & Security
+- **[pqcrypto](https://github.com/rustpq/pqcrypto)** (0.19.0+): Post-quantum cryptography primitives
+- **[ring](https://github.com/briansmith/ring)** (0.17.0+): High-performance cryptographic primitives
+- **[dalek-cryptography](https://github.com/dalek-cryptography)**: Ed25519/X25519 implementations (latest)
+- **[RustCrypto](https://github.com/RustCrypto)** suite: Modern cryptographic algorithms (latest)
+- **[openssl-rust](https://github.com/sfackler/rust-openssl)** (0.10.66+): OpenSSL bindings
+- **[rustls](https://github.com/rustls/rustls)** (0.22.0+): Pure Rust TLS implementation
+- **[rust-hsm](https://github.com/Nitrokey/rust-hsm)** (0.6.0+): Hardware Security Module integration
+- **[zeroize](https://github.com/RustCrypto/utils)** (1.7.0+): Secure memory clearing
 
 #### Network & Protocols
-- **[tokio](https://github.com/tokio-rs/tokio)** (1.28.0+): Asynchronous runtime
-- **[hyper](https://github.com/hyperium/hyper)** (0.14.26+): Hypertext Transfer Protocol client/server
-- **[quinn](https://github.com/quinn-rs/quinn)** (0.10.0+): Quick UDP Internet Connections protocol implementation
-- **[rust-dns](https://github.com/EmilHernvall/dnsguide)**: Domain Name System protocol implementation
-- **[trust-dns](https://github.com/bluejekyll/trust-dns)**: DNS library and server implementation
-- **[tonic](https://github.com/hyperium/tonic)** (0.9.0+): gRPC implementation
-- **[libp2p](https://github.com/libp2p/rust-libp2p)** (0.51.0+): Peer-to-Peer networking stack
+- **[tokio](https://github.com/tokio-rs/tokio)** (1.35.0+): Asynchronous runtime with enhanced performance
+- **[hyper](https://github.com/hyperium/hyper)** (1.0.0+): HTTP client/server with HTTP/2 and HTTP/3 support
+- **[quinn](https://github.com/quinn-rs/quinn)** (0.10.0+): QUIC protocol implementation
+- **[trust-dns](https://github.com/bluejekyll/trust-dns)**: DNS library with DoH/DoT support (latest)
+- **[tonic](https://github.com/hyperium/tonic)** (0.10.0+): gRPC implementation with improved performance
+- **[libp2p](https://github.com/libp2p/rust-libp2p)** (0.53.0+): Peer-to-peer networking stack
 - **[web3](https://github.com/tomusdrw/rust-web3)** (0.19.0+): Ethereum/blockchain integration
+- **[reqwest](https://github.com/seanmonstar/reqwest)** (0.11.0+): HTTP client with async support
 
 #### Low-level & System
 - **libc** (0.2.147+): C library bindings
