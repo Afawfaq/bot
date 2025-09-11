@@ -13,7 +13,7 @@ A Python PoC with encrypted communication using TLS/SSL.
 - Self-signed certificates for testing
 
 ## Setup
-1. Install Python 3.x
+1. Install Python 3.11+ (latest stable version with performance improvements)
 2. Generate self-signed certificates
 3. Place certs in certs/ directory
 4. Run server.py and client.py
